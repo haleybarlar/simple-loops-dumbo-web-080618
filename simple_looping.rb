@@ -1,7 +1,10 @@
 def loop_iterator(number_of_times)
-
-  phrase = "Welcome to Flatiron School's Web Development Course!"
-  
+  loop do
+    counter += 1
+  puts "Welcome to Flatiron School's Web Development Course!"
+  if counter > 7
+    break
+end  
 end
 
 def times_iterator(number_of_times)
@@ -27,8 +30,6 @@ end
 end
 
 def for_iterator(number_of_times)
-  # code your solution here using the "for" keyword
-  # remember that `for` requires a range of numbers. How can we turn our number into a range?
   for counter in 1..7 do
   puts "Welcome to Flatiron School's Web Development Course!"
 end
